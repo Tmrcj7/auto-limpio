@@ -1,17 +1,17 @@
 document.getElementById("rut").addEventListener("blur", (e) => {
-	const rut = parseInt( document.getElementById("RUT").value );
+	const rut = parseInt( document.getElementById("rut").value );
   
   // NaN (not a number) 
   if( isNaN(rut) ) {
   	// es que hay un error en lo que introdujo el usuario
-    console.error("el RUT no es número válido");
+    alert("el RUT no es número válido");
   }
   
   if( rut > 1000000 && rut < 99999999) {
   	// es válido 
   } else {
   	// NO es válido 
-    console.error("el RUT está fuera de rango.");
+    alert("el RUT está fuera de rango.");
   }
 });
 
@@ -21,7 +21,7 @@ document.getElementById("dv").addEventListener("blur", (e) => {
   
   if( !permitidos.includes(dv) ) {
   	// muestro mensaje de error
-    console.error("Dígito verificador NO permitido!!!");
+    alert("Dígito verificador NO permitido!!!");
   }
 });
 
@@ -30,6 +30,6 @@ document.getElementById("direccion").addEventListener("blur", (e) => {
   const expresionRegular = /[a-z ]{1,80}/i;
   if( !expresionRegular.test(direccion) ) {
   	// mostrar mensaje error 
-    console.error("La dirección incluye caracteres NO válidos!!!");
+    alert("La dirección incluye caracteres NO válidos!!!");
   }
 });
