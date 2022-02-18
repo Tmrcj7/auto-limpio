@@ -9,7 +9,6 @@
             "request": "launch",
             "name": "Open servicios.html",
             "url": "http://localhost:5500",
-            "file": "c:\\Users\\tamar\\Documents\\Proyectos\\auto limpio\\servicios.html"
         }
     ]
 }
