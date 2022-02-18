@@ -1,5 +1,5 @@
-document.getElementById("RUT").addEventListener("blur", (e) => {
-	const rut = parseInt( document.getElementById("rut").value );
+document.getElementById("rut").addEventListener("blur", (e) => {
+	const rut = parseInt( document.getElementById("RUT").value );
   
   // NaN (not a number) 
   if( isNaN(rut) ) {
